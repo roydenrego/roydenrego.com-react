@@ -126,41 +126,6 @@ $(document).ready(function () {
       }
     });
   });
-
-  //Content Filter
-
-  $('input:radio[name="project_type"]').change(
-    function () {
-      if (this.checked) {
-        var type = $(this).attr('id');
-
-
-        $(".card").removeClass('card-disappear');
-
-        if (type == "mobile") {
-          $(".web-design").addClass('card-disappear');
-          $(".workshop").addClass('card-disappear');
-        }
-        else if (type == "web") {
-          $(".mobile-app").addClass('card-disappear');
-          $(".workshop").addClass('card-disappear');
-        }
-        else if (type == "workshop") {
-          $(".mobile-app").addClass('card-disappear');
-          $(".web-design").addClass('card-disappear');
-        }
-      }
-    });
-
-  //Loading the Portfolio Popup
-  $('.card .content a').on('click', function (e) {
-    var id = $(this).attr('data-id');
-    var data = JSON.parse($('#card-' + id).attr('data-json'));
-
-    $("#port-title").text(data.title);
-    $("#popup-article .content")[0].innerHTML = data.content;
-    $(".popup__close").attr('href', '#card-' + id);
-  });
 });
 
 

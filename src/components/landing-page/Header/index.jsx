@@ -19,11 +19,11 @@ export default class Header extends Component {
 
                     <div className="collapse navbar-collapse">
                         <ul className="nav navbar-nav navbar-right">
-                            <li><a href="#home" class="smoothScroll">Home</a></li>
-                            <li><a href="#about" class="smoothScroll">About Me</a></li>
-                            <li><a href="#experience" class="smoothScroll">Experiences</a></li>
-                            <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-                            <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                            <li><a href="#home" className="smoothScroll">Home</a></li>
+                            <li><a href="#about" className="smoothScroll">About Me</a></li>
+                            <li><a href="#experience" className="smoothScroll">Experiences</a></li>
+                            <li><a href="#portfolio" className="smoothScroll">Portfolio</a></li>
+                            <li><a href="#contact" className="smoothScroll">Contact</a></li>
                         </ul>
                     </div>
 

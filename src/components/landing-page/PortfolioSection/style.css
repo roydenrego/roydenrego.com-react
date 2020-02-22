@@ -1,0 +1,64 @@
+
+.portfolio-content {
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  
+  .portfolio-content>h1 {
+    margin-top: 35px;
+  }
+  
+  .portfolio-content p {
+    color: #fff;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+  
+  
+  @media screen and (min-width: 52em) {
+    .portfolio-content {
+      max-width: 90em;
+    }
+  }
+  
+  
+  .portfolio-filters input[type="radio"] {
+    display: none;
+  }
+  
+  .portfolio-filters label {
+    text-align: center;
+    color: #fff;
+    padding: 0.7%;
+    margin: 0.5%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 1s ease;
+  }
+  
+  .portfolio-filters label:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .portfolio-filters .active {
+    background: #fff;
+    color: #000;
+  }
+  
+  .portfolio-filters input[type="radio"][id="mobile"]:checked+label,
+  .portfolio-filters input[type="radio"][id="web"]:checked+label,
+  .portfolio-filters input[type="radio"][id="workshop"]:checked+label,
+  .portfolio-filters input[type="radio"][id="reset"]:checked+label {
+    background: #fff;
+    color: #000;
+  }
+  
+  
+  

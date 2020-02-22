@@ -15,12 +15,26 @@ import AboutSection from '../../components/landing-page/AboutSection';
 import ServiceSection from '../../components/landing-page/ServiceSection';
 import ExperienceSection from '../../components/landing-page/ExperienceSection';
 import EducationSection from '../../components/landing-page/EducationSection';
+import PortfolioSection from '../../components/landing-page/PortfolioSection';
 import DownloadSection from '../../components/landing-page/DownloadSection';
 import ContactSection from '../../components/landing-page/ContactSection';
+
+import ProjectPopup from '../../components/landing-page/ProjectPopup';
 
 import NotFound from '../../components/landing-page/NotFound';
 
 export default class Home extends Component {
+
+    state = {
+        popupProject: {}
+    };
+
+    showPopup(project) {
+        this.setState({
+            popupProject: project
+        })
+    }
+
     render() {
         return (
             <Router>
@@ -34,8 +48,13 @@ export default class Home extends Component {
                         <ServiceSection />
                         <ExperienceSection />
                         <EducationSection />
+                        <PortfolioSection
+                            showPopup={this.showPopup.bind(this)} />
                         <DownloadSection />
                         <ContactSection />
+
+                        <ProjectPopup
+                            project={this.state.popupProject} />
                     </Route>
 
                     <Route component={NotFound} />
