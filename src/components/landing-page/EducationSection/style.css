@@ -1,0 +1,33 @@
+/*---------------------------------------
+    Education section              
+-----------------------------------------*/
+
+#education {
+    background: #E3AE57;
+}
+
+#education .education-img {
+    background: url('/images/education-img.jpg') no-repeat;
+}
+
+#education .media-heading {
+    margin-bottom: 0px;
+}
+
+#education .media .fa {
+    font-size: 42px;
+    margin-right: 14px;
+}
+
+#education small {
+    color: #886D1E;
+    font-weight: bold;
+}
+
+.education-fas {
+    margin-right: 19px !important;
+}  
+  
+#education {
+    overflow: hidden;
+}

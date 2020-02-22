@@ -1,0 +1,39 @@
+/*---------------------------------------
+    Service section              
+-----------------------------------------*/
+
+#service {
+    background: #E9724C;
+}
+
+#service p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#service .service-thumb {
+    padding: 52px 22px 52px 22px;
+}
+
+#service .service-thumb .fa {
+    font-size: 42px;
+    padding-bottom: 22px;
+}
+
+
+/* Fix for unmatching column layout */
+
+.service-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+  
+.service-cell {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}

@@ -12,18 +12,6 @@
 
 /*}*/
 
-.education-fas {
-  margin-right: 19px !important;
-}
-
-.exp-small {
-  margin-left: 6px;
-}
-
-#education {
-  overflow: hidden;
-}
-
 .portfolio-content {
   text-align: center;
   color: #fff;
@@ -43,31 +31,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 35px;
-}
-
-.download-btn {
-  background-color: transparent;
-  border: 3px solid #fff;
-  border-radius: 100px;
-  color: #fff;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 1.6px;
-  padding: 12px 36px;
-  margin-top: 42px;
-  transition: all 0.4s ease-in-out;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-.download-btn:hover {
-  background-color: #000;
-  border-color: #000;
-  color: #ffffff;
-}
-
-.download-btn:focus {
-  color: #fff;
 }
 
 @media screen and (min-width: 40em) {
@@ -461,57 +424,7 @@
 }
 
 
-/* Fix for unmatching column layout */
 
-.service-row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.service-cell {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media(min-width: 768px) {
-  .exu-row {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  
-  .exu-cell {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media(min-width: 990px) {
-  
-  .about-row, .contact-row {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  
-  .about-cell, .contact-cell {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 
 
 .swal2-popup {
@@ -596,9 +509,7 @@
   background: #211b19;
 }
 
-#about p {
-  text-align: justify;
-}
+
 
 
 .blog-active {
