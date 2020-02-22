@@ -16,19 +16,6 @@
 
 
 
-
-
-
-
-.swal2-popup {
-  font-size: 1.6rem !important;
-}
-
-
-
-
-
-
 .blog-active {
   background: transparent;
   color: #E3AE57 !important;
@@ -139,6 +126,3 @@
   font-weight: 400;
 }
 
-.grc-disabled {
-  opacity: 0.5 !important;
-}

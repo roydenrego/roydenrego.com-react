@@ -287,3 +287,7 @@ footer {
         padding: 40px 0;
     }
 }
+
+.swal2-popup {
+    font-size: 1.6rem !important;
+}

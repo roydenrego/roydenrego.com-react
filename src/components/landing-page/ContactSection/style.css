@@ -73,3 +73,8 @@
 #contact .fa {
     padding-right: 10px;
 }
+
+.grc-disabled {
+    opacity: 0.5 !important;
+}
+  
