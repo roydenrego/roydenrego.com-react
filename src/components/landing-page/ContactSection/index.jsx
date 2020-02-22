@@ -23,11 +23,12 @@ export default class DownloadSection extends Component {
         });
         try {
             const response = await axios({
-                url: 'http://localhost:8010/proxy/v1/contact',
+                url: '/v1/contact',
+                baseURL: process.env.REACT_APP_BASE_URL,
                 method: 'POST',
                 auth: {
-                    username: 'ltmFPInUvF',
-                    password: '9PYpR3jw0JlZOQ5JEpBE'
+                    username: process.env.REACT_APP_AUTH_USERNAME,
+                    password: process.env.REACT_APP_AUTH_PASSWORD
                 },
                 data: {
                     fullname,
@@ -130,7 +131,7 @@ export default class DownloadSection extends Component {
                                                 id="message" placeholder="Write your message..."
                                                 onChange={this.messageChange}
                                                 value={this.state.message}
-                                                required/>
+                                                required />
                                         </div>
 
                                         <ReCAPTCHA

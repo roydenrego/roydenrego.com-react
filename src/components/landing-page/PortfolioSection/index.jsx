@@ -19,11 +19,12 @@ export default class PortfolioSection extends Component {
 
     async getProjects() {
         const response = await axios({
-            url: 'http://localhost:8010/proxy/v1/portfolio',
+            url: '/v1/portfolio',
+            baseURL: process.env.REACT_APP_BASE_URL,
             method: 'GET',
             auth: {
-                username: 'ltmFPInUvF',
-                password: '9PYpR3jw0JlZOQ5JEpBE'
+                username: process.env.REACT_APP_AUTH_USERNAME,
+                password: process.env.REACT_APP_AUTH_PASSWORD
             },
         });
         try {
