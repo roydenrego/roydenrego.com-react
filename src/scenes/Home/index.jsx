@@ -1,3 +1,8 @@
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+} from 'react-router-dom';
 import React, { Component } from 'react';
 import './style.css';
 
@@ -13,23 +18,31 @@ import EducationSection from '../../components/landing-page/EducationSection';
 import DownloadSection from '../../components/landing-page/DownloadSection';
 import ContactSection from '../../components/landing-page/ContactSection';
 
+import NotFound from '../../components/landing-page/NotFound';
+
 export default class Home extends Component {
     render() {
         return (
-            <div>
+            <Router>
                 <Preloader />
                 <Header />
 
-                <HomeSection />
-                <AboutSection />
-                <ServiceSection />
-                <ExperienceSection />
-                <EducationSection />
-                <DownloadSection />
-                <ContactSection />
+                <Switch>
+                    <Route exact path="/">
+                        <HomeSection />
+                        <AboutSection />
+                        <ServiceSection />
+                        <ExperienceSection />
+                        <EducationSection />
+                        <DownloadSection />
+                        <ContactSection />
+                    </Route>
+
+                    <Route component={NotFound} />
+                </Switch>
 
                 <Footer />
-            </div>
+            </Router>
         )
     }
 }
