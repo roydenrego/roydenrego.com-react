@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './style.css';
 
 import PortfolioCard from '../PortfolioCard';
+import Loader from 'react-loaders';
 
 import axios from 'axios';
 
@@ -69,6 +70,8 @@ export default class PortfolioSection extends Component {
     }
 
     render() {
+        const { classes } = this.props;
+
         return (
             <section id="portfolio" className="parallax-section">
                 <div className="container">
@@ -113,8 +116,10 @@ export default class PortfolioSection extends Component {
                                     )
                                 })
                             ) : (
-                                <h3>Loading</h3>
-                            )}
+                                    <Loader
+                                        className="portfolio-loader"
+                                        type="ball-beat" active />
+                                )}
 
                         </div>
 
