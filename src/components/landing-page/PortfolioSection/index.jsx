@@ -11,7 +11,7 @@ export default class PortfolioSection extends Component {
     state = {
         isLoading: true,
         projects: [],
-        error: null
+        error: false
     };
 
     constructor(props) {
@@ -19,16 +19,17 @@ export default class PortfolioSection extends Component {
     }
 
     async getProjects() {
-        const response = await axios({
-            url: '/v1/portfolio',
-            baseURL: process.env.REACT_APP_BASE_URL,
-            method: 'GET',
-            auth: {
-                username: process.env.REACT_APP_AUTH_USERNAME,
-                password: process.env.REACT_APP_AUTH_PASSWORD
-            },
-        });
         try {
+            const response = await axios({
+                url: '/v1/portfolio',
+                baseURL: process.env.REACT_APP_BASE_URL,
+                method: 'GET',
+                auth: {
+                    username: process.env.REACT_APP_AUTH_USERNAME,
+                    password: process.env.REACT_APP_AUTH_PASSWORD
+                },
+            });
+
             let projects = response.data.data.map(obj => {
                 obj.visible = true;
                 return obj;
@@ -38,7 +39,7 @@ export default class PortfolioSection extends Component {
                 isLoading: false
             });
         } catch (error) {
-            this.setState({ error, isLoading: false });
+            this.setState({ error: true, isLoading: false });
         }
     };
 
@@ -104,7 +105,12 @@ export default class PortfolioSection extends Component {
 
                         <div className="portfolio-container">
 
-                            {!this.state.isLoading ? (
+                            {this.state.error ? (
+                                <p className="portfolio-error">
+                                    We encountered a error while loading the projects, please try again after sometime.
+                                </p>
+                            ) 
+                            : !this.state.isLoading ? (
                                 this.state.projects.map((project, index) => {
                                     return (
                                         <PortfolioCard
@@ -116,10 +122,10 @@ export default class PortfolioSection extends Component {
                                     )
                                 })
                             ) : (
-                                    <Loader
-                                        className="portfolio-loader"
-                                        type="ball-beat" active />
-                                )}
+                                <Loader
+                                    className="portfolio-loader"
+                                    type="semi-circle-spin" active />
+                            )}
 
                         </div>
 
