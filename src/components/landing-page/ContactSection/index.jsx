@@ -5,6 +5,8 @@ import axios from 'axios';
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from 'sweetalert2';
 
+let contactEmail = 'roydenrego@outlook.com';
+
 export default class DownloadSection extends Component {
 
     state = {
@@ -167,8 +169,8 @@ export default class DownloadSection extends Component {
                                 <div className="wow fadeInUp contact-info" data-wow-delay="0.8s">
                                     <h3 className="color-white">Contact.</h3>
                                     <p><i className="fa fa-phone"></i> +91 855-332-7725</p>
-                                    <p><i className="fa fa-envelope-o"></i> <a href="mailto:roydenrego@outlook.com">roydenrego@outlook.com</a></p>
-                                    <p><i className="fa fa-globe"></i> <a href="#">roydenrego.com</a></p>
+                                    <p><i className="fa fa-envelope-o"></i> <a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
+                                    <p><i className="fa fa-globe"></i> <a href="/#">roydenrego.com</a></p>
                                 </div>
 
                             </div>

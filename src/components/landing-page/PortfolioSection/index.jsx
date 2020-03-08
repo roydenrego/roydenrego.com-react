@@ -14,10 +14,6 @@ export default class PortfolioSection extends Component {
         error: false
     };
 
-    constructor(props) {
-        super(props);
-    }
-
     async getProjects() {
         try {
             const response = await axios({
@@ -71,8 +67,6 @@ export default class PortfolioSection extends Component {
     }
 
     render() {
-        const { classes } = this.props;
-
         return (
             <section id="portfolio" className="parallax-section">
                 <div className="container">

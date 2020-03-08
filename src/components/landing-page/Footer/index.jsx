@@ -14,11 +14,16 @@ export default class Header extends Component {
                                 <p>Copyright &copy; {(new Date().getFullYear())} Royden Rego</p>
                             </div>
                             <ul className="wow fadeInUp social-icon" data-wow-delay="1.5s">
-                                <li><a href="https://www.facebook.com/roydenrego4" target="_blank" className="fa fa-facebook"></a></li>
-                                <li><a href="https://twitter.com/roydenrego" target="_blank" className="fa fa-twitter"></a></li>
-                                <li><a href="https://github.com/roydenrego" target="_blank" className="fa fa-github"></a></li>
-                                <li><a href="https://roydenrego.com" className="fa fa-dribbble"></a></li>
-                                <li><a href="https://www.linkedin.com/in/roydenrego/" target="_blank" className="fa fa-linkedin"></a></li>
+                                <li>
+                                    <a href="https://www.facebook.com/roydenrego4"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="fa fa-facebook"></a>
+                                </li>
+                                <li><a href="https://twitter.com/roydenrego" target="_blank" rel="noopener noreferrer" className="fa fa-twitter"></a></li>
+                                <li><a href="https://github.com/roydenrego" target="_blank" rel="noopener noreferrer" className="fa fa-github"></a></li>
+                                <li><a href="https://roydenrego.com" rel="noopener noreferrer" className="fa fa-dribbble"></a></li>
+                                <li><a href="https://www.linkedin.com/in/roydenrego/" target="_blank" rel="noopener noreferrer" className="fa fa-linkedin"></a></li>
                             </ul>
                         </div>
 
