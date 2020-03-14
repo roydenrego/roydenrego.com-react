@@ -15,7 +15,7 @@ export default class AboutSection extends Component {
                                     <p className="color-yellow">How I ventured into the world of Computers.</p>
                                 </div>
                                 <div className="wow fadeInUp" data-wow-delay="0.8s">
-                                    <p>Ever since I was a little boy, I have always been fascinated by Computers. And in 7th grade I ventured into the field of computer software by learning my first computer language which was C. Since then I have not stopped, my thirst for learning more about computer software has led me to learn more languages such as C++, Java, HTML, CSS, JavaScript, Swift, Node.js, and technologies such as cloud computing, mobile application development, and Electronjs and much more.</p>
+                                    <p>Ever since I was a little boy, I have always been fascinated by Computers. And in 7th grade I ventured into the field of computer software by learning my first programming language - C. Since then I have not stopped, my thirst for learning more about computer software has led me to learn more programming languages such as C++, Java, HTML, CSS, JavaScript, Swift, Node.js, and technologies such as cloud computing, mobile application development, and Electronjs and much more.</p>
                                     <p>To further excel myself I have been working for startups such as Softrixz and TechShaadi and with them, I have built multiple large scale-enterprise applications that use the power of the cloud to serve the needs of the various organizations around the country.</p>
                                 </div>
                             </div>

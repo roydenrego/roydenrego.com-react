@@ -22,7 +22,7 @@ export default class ExperienceSection extends Component {
             company: 'TechShaadi',
             title: 'Freelance Developer',
             duration: 'Jun 2016 - Aug 2019',
-            description: 'Worked as a intergral part of the TechShaadi Development Team in building their complete suite of Wedding Applications.',
+            description: 'Was a intergral part of the TechShaadi Development Team in building their complete suite of Wedding Applications.',
             wowDelay: 2.0
         }];
 
