@@ -72,3 +72,9 @@
         padding: 0;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .custom-navbar .navbar-brand {
+        line-height: 18px;
+    }
+}

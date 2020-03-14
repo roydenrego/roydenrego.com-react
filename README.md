@@ -43,7 +43,6 @@ Start by typing the following commands in your terminal in order to get `create-
 Create a .env file in the root of the project whose contents should be as below:
 
 ```
-NODE_PATH=src/
 REACT_APP_BASE_URL="API_URL"
 REACT_APP_AUTH_USERNAME="API_BASIC_AUTH_USERNAME"
 REACT_APP_AUTH_PASSWORD="API_BASIC_AUTH_PASSWORD"
