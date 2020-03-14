@@ -6,22 +6,22 @@ import {
 import React, { Component } from 'react';
 import './style.css';
 
-import Preloader from '../../components/Preloader';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Preloader from 'components/Preloader';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
 
-import HomeSection from '../../components/HomeSection';
-import AboutSection from '../../components/AboutSection';
-import ServiceSection from '../../components/ServiceSection';
-import ExperienceSection from '../../components/ExperienceSection';
-import EducationSection from '../../components/EducationSection';
-import PortfolioSection from '../../components/PortfolioSection';
-import DownloadSection from '../../components/DownloadSection';
-import ContactSection from '../../components/ContactSection';
+import HomeSection from 'components/HomeSection';
+import AboutSection from 'components/AboutSection';
+import ServiceSection from 'components/ServiceSection';
+import ExperienceSection from 'components/ExperienceSection';
+import EducationSection from 'components/EducationSection';
+import PortfolioSection from 'components/PortfolioSection';
+import DownloadSection from 'components/DownloadSection';
+import ContactSection from 'components/ContactSection';
 
-import ProjectPopup from '../../components/ProjectPopup';
+import ProjectPopup from 'components/ProjectPopup';
 
-import NotFound from '../../components/NotFound';
+import NotFound from 'components/NotFound';
 
 export default class Home extends Component {
 

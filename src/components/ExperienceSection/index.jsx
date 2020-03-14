@@ -1,8 +1,31 @@
 import React, { Component } from 'react';
 import './style.css';
 
+import Experience from './components/Experience';
+
 export default class ExperienceSection extends Component {
+
     render() {
+        let experiences = [{
+            company: 'ITC Infotech',
+            title: 'Associate IT Consultant',
+            duration: 'Sep 2019 - Present',
+            description: 'Currently building Mobile Apps and Micro-services for SessionM Accelerators at ITC Infotech India Ltd.',
+            wowDelay: 1.2
+        },{
+            company: 'Softrixz',
+            title: 'Freelance Developer',
+            duration: 'Jan 2013 - Aug 2019',
+            description: 'Built Mobile and Desktop Applications for large-scale deployments at Softrixz for clients and internal projects.',
+            wowDelay: 1.6
+        },{
+            company: 'TechShaadi',
+            title: 'Freelance Developer',
+            duration: 'Jun 2016 - Aug 2019',
+            description: 'Worked as a intergral part of the TechShaadi Development Team in building their complete suite of Wedding Applications.',
+            wowDelay: 2.0
+        }];
+
         return (
             <section id="experience" className="parallax-section">
                 <div className="container">
@@ -19,35 +42,16 @@ export default class ExperienceSection extends Component {
                                     <p className="color-white">Previous companies and my tasks</p>
                                 </div>
 
-                                <div className="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                                    <div className="media-object media-left">
-                                        <i className="fa fa-laptop"></i>
-                                    </div>
-                                    <div className="media-body">
-                                        <h3 className="media-heading">ITC Infotech - Associate IT Consultant <small className="exp-small">Sep 2019 - Present</small></h3>
-                                        <p className="color-white">Building Mobile Apps and Micro-services for SessionM Accelerators at ITC Infotech India Ltd.</p>
-                                    </div>
-                                </div>
-
-                                <div className="wow fadeInUp color-white media" data-wow-delay="1.6s">
-                                    <div className="media-object media-left">
-                                        <i className="fa fa-laptop"></i>
-                                    </div>
-                                    <div className="media-body">
-                                        <h3 className="media-heading">Softrixz - Freelance Developer <small className="exp-small">Jan 2013 - Aug 2019</small></h3>
-                                        <p className="color-white">Worked as Freelance Developer at Softrixz building mobile and desktop appplications for clients and internal projects.</p>
-                                    </div>
-                                </div>
-
-                                <div className="wow fadeInUp color-white media" data-wow-delay="1.2s">
-                                    <div className="media-object media-left">
-                                        <i className="fa fa-laptop"></i>
-                                    </div>
-                                    <div className="media-body">
-                                        <h3 className="media-heading">TechShaadi - Freelance Developer <small className="exp-small">Jun 2016 - Aug 2019</small></h3>
-                                        <p className="color-white">Worked as Freelance Developer in TechShaadi building mobile applications for weddings.</p>
-                                    </div>
-                                </div>
+                                {experiences.map(exp => {
+                                    return (
+                                        <Experience
+                                            company={exp.company}
+                                            title={exp.title}
+                                            duration={exp.duration}
+                                            description={exp.description}
+                                            wowDelay={exp.wowDelay} />
+                                    );
+                                })}
 
                             </div>
                         </div>

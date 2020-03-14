@@ -20,10 +20,6 @@
     font-weight: bold;
 }
 
-.exp-small {
-    margin-left: 6px;
-}
-
 @media(min-width: 768px) {
     .exu-row {
       display: -webkit-flex;

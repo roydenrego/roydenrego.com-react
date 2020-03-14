@@ -1,11 +1,6 @@
-/* global $ */
-/* global WOW */
-/* global swal */
 /*-------------------------------------------------------------------------------
   PRE LOADER
 -------------------------------------------------------------------------------*/
-
-var site_url = "https://roydenrego.com";
 
 $(window).load(function () {
   $('.preloader').fadeOut(1000); // set duration in brackets    
