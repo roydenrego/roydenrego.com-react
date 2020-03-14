@@ -24,8 +24,18 @@ export default class ExperienceSection extends Component {
                                         <i className="fa fa-laptop"></i>
                                     </div>
                                     <div className="media-body">
-                                        <h3 className="media-heading">Softrixz - Freelance Developer <small className="exp-small">Jan 2013 - Present</small></h3>
-                                        <p className="color-white">Been working as Freelance Developer at Softrixz building mobile and desktop appplications for clients and internal projects.</p>
+                                        <h3 className="media-heading">ITC Infotech - Associate IT Consultant <small className="exp-small">Sep 2019 - Present</small></h3>
+                                        <p className="color-white">Building Mobile Apps and Micro-services for SessionM Accelerators at ITC Infotech India Ltd.</p>
+                                    </div>
+                                </div>
+
+                                <div className="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                                    <div className="media-object media-left">
+                                        <i className="fa fa-laptop"></i>
+                                    </div>
+                                    <div className="media-body">
+                                        <h3 className="media-heading">Softrixz - Freelance Developer <small className="exp-small">Jan 2013 - Aug 2019</small></h3>
+                                        <p className="color-white">Worked as Freelance Developer at Softrixz building mobile and desktop appplications for clients and internal projects.</p>
                                     </div>
                                 </div>
 
@@ -34,8 +44,8 @@ export default class ExperienceSection extends Component {
                                         <i className="fa fa-laptop"></i>
                                     </div>
                                     <div className="media-body">
-                                        <h3 className="media-heading">TechShaadi - Freelance Developer <small className="exp-small">June 2016 - August 2019</small></h3>
-                                        <p className="color-white">Working as Freelance Developer in TechShaadi building mobile applications for weddings.</p>
+                                        <h3 className="media-heading">TechShaadi - Freelance Developer <small className="exp-small">Jun 2016 - Aug 2019</small></h3>
+                                        <p className="color-white">Worked as Freelance Developer in TechShaadi building mobile applications for weddings.</p>
                                     </div>
                                 </div>
 

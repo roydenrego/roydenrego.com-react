@@ -1,70 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# roydenrego.com
+> Personal Portfolio website built in React using the Stimulus Template.
+> Migrated Node.js Application - [https://github.com/roydenrego/roydenrego.com](https://github.com/roydenrego/roydenrego.com)
 
-## Available Scripts
 
-In the project directory, you can run:
+[![License](https://img.shields.io/github/license/roydenrego/roydenrego.com.svg)](https://github.com/roydenrego/roydenrego.com-react/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/roydenrego/roydenrego.com.svg?branch=master)](https://travis-ci.org/roydenrego/roydenrego.com-react) 
 
-### `npm start`
+## Table of Contents
+- [roydenrego.com](#roydenregocom)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+      - [Installing & Local Development](#installing--local-development)
+  - [Built With](#built-with)
+  - [Changelog](#changelog)
+      - [V 1.0.0](#v-100)
+  - [Authors](#authors)
+  - [License](#license)
+  
+## Getting Started
 
-lcp --proxyUrl https://api.roydenrego.com
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+### Prerequisites
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In order to run this site on your local machine all what you need to do is to have the prerequisites stated below installed on your machine and follow the installation steps down below.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  - Node.js
+  - Yarn or NPM
+  - Git
+  
+#### Installing & Local Development
+Start by typing the following commands in your terminal in order to get **Adminator** full package on your machine and starting a local development server with live reload feature.
 
-### `npm test`
+```
+> git clone https://github.com/roydenrego/roydenrego.com-react.git roydenrego
+> cd roydenrego
+> npm install
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create a .env file in the root of the project whose contents should be as below:
 
-### `npm run build`
+```
+REACT_APP_BASE_URL="API_URL"
+REACT_APP_AUTH_USERNAME="API_BASIC_AUTH_USERNAME"
+REACT_APP_AUTH_PASSWORD="API_BASIC_AUTH_PASSWORD"
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The base URL is the URL of the API Endpoints, see thi
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Once the .env file is setup, you can run the website by executing the following command:
+```
+> npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Built With
+- Stimulus Template: [http://www.templatemo.com/tm-498-stimulus](http://www.templatemo.com/tm-498-stimulus)
+- News Cards: [https://codepen.io/choogoor/pen/YWBxAg](https://codepen.io/choogoor/pen/YWBxAg)
+- SRTdash: [https://github.com/puikinsh/srtdash-admin-dashboard](https://github.com/puikinsh/srtdash-admin-dashboard)
 
-### `npm run eject`
+## Changelog
+#### V 1.0.0
+Initial Release
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Authors
+[Royden Rego](https://roydenrego.com)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+roydenrego.com is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the final products. But you always need to state that Royden Rego is the original author of this template. See ``LICENSE`` for more information.

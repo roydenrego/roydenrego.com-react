@@ -6,22 +6,22 @@ import {
 import React, { Component } from 'react';
 import './style.css';
 
-import Preloader from '../../components/landing-page/Preloader';
-import Header from '../../components/landing-page/Header';
-import Footer from '../../components/landing-page/Footer';
+import Preloader from '../../components/Preloader';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
-import HomeSection from '../../components/landing-page/HomeSection';
-import AboutSection from '../../components/landing-page/AboutSection';
-import ServiceSection from '../../components/landing-page/ServiceSection';
-import ExperienceSection from '../../components/landing-page/ExperienceSection';
-import EducationSection from '../../components/landing-page/EducationSection';
-import PortfolioSection from '../../components/landing-page/PortfolioSection';
-import DownloadSection from '../../components/landing-page/DownloadSection';
-import ContactSection from '../../components/landing-page/ContactSection';
+import HomeSection from '../../components/HomeSection';
+import AboutSection from '../../components/AboutSection';
+import ServiceSection from '../../components/ServiceSection';
+import ExperienceSection from '../../components/ExperienceSection';
+import EducationSection from '../../components/EducationSection';
+import PortfolioSection from '../../components/PortfolioSection';
+import DownloadSection from '../../components/DownloadSection';
+import ContactSection from '../../components/ContactSection';
 
-import ProjectPopup from '../../components/landing-page/ProjectPopup';
+import ProjectPopup from '../../components/ProjectPopup';
 
-import NotFound from '../../components/landing-page/NotFound';
+import NotFound from '../../components/NotFound';
 
 export default class Home extends Component {
 
