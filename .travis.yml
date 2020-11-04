@@ -5,6 +5,9 @@ warnings_are_errors: false
 cache:
   directories:
   - node_modules
+branches:
+  only:
+  - master
 script:
 - npm run build
 deploy:
