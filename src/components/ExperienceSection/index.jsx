@@ -7,20 +7,20 @@ export default class ExperienceSection extends Component {
 
     render() {
         let experiences = [{
-            company: 'ITC Infotech',
+            company: 'ITC Infotech India Ltd.',
             title: 'Associate IT Consultant',
             duration: 'Sep 2019 - Present',
             description: 'Currently building Mobile Apps and Micro-services for SessionM Accelerators at ITC Infotech India Ltd.',
             wowDelay: 1.2
         },{
             company: 'Softrixz',
-            title: 'Freelance Developer',
+            title: 'Co-Founder',
             duration: 'Jan 2013 - Aug 2019',
             description: 'Built Mobile and Desktop Applications for large-scale deployments at Softrixz for clients and internal projects.',
             wowDelay: 1.6
         },{
             company: 'TechShaadi',
-            title: 'Freelance Developer',
+            title: 'Co-Founder',
             duration: 'Jun 2016 - Aug 2019',
             description: 'Was a intergral part of the TechShaadi Development Team in building their complete suite of Wedding Applications.',
             wowDelay: 2.0

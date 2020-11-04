@@ -36,7 +36,7 @@ export default class ServiceSection extends Component {
                             <div className="wow fadeInUp service-thumb" data-wow-delay="1.8s">
                                 <i className="fa fa-html5"></i>
                                 <h3>Websites</h3>
-                                <p>Can build responsive and stunning websites while using PHP and Node.js to power them.</p>
+                                <p>Can build responsive and stunning websites using React and Node.js to power them.</p>
                             </div>
                         </div>
 
