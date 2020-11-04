@@ -42,8 +42,12 @@
     display: inline-block;
   }
   
-  .card .menu-content a {
+  .card .menu-content button {
     color: #fff;
+    background: none;
+    border: 0;
+    padding: 0;
+    outline: none;
   }
   
   .card .menu-content span {
