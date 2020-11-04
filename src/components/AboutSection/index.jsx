@@ -15,8 +15,8 @@ export default class AboutSection extends Component {
                                     <p className="color-yellow">How I ventured into the world of Computers.</p>
                                 </div>
                                 <div className="wow fadeInUp" data-wow-delay="0.8s">
-                                    <p>Ever since I was a little boy, I have always been fascinated by Computers. And in 7th grade I ventured into the field of computer software by learning my first programming language - C. Since then I have not stopped, my thirst for learning more about computer software has led me to learn more programming languages such as C++, Java, HTML, CSS, JavaScript, Swift, Node.js, and technologies such as cloud computing, mobile application development, and Electronjs and much more.</p>
-                                    <p>To further excel myself I have been working for startups such as Softrixz and TechShaadi and with them, I have built multiple large scale-enterprise applications that use the power of the cloud to serve the needs of the various organizations around the country.</p>
+                                    <p>Ever since I was a little boy, I have always been fascinated by Computers and in 7th grade I ventured into the field of computer software by learning my first programming language - C. Since then I have not stopped, my thirst for learning more about computer software has led me to learn more programming languages such as C++, Java, HTML, CSS, JavaScript, Swift, Node.js, and technologies such as cloud computing, mobile application development, and Electronjs and much more.</p>
+                                    <p>To further excel myself I have co-founded startups such as Softrixz and TechShaadi and with them, I have built multiple large scale-enterprise applications that use the power of the cloud to serve the needs of the various organizations around the country.</p>
                                 </div>
                             </div>
                         </div>
@@ -29,10 +29,16 @@ export default class AboutSection extends Component {
                             <div className="skill-thumb">
                                 <div className="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
                                     <h1>My Skills</h1>
-                                    <p className="color-white">Java, Swift, C# - App Development . HTML, CSS, JS - Web Design . C/C++ . Python . Photoshop & Illustrator</p>
+                                    <p className="color-white">NodeJS, React, HTML, CSS, JS - Web Design . Java - Android App Development . C/C++ . Photoshop & Illustrator</p>
                                 </div>
 
                                 <div className=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
+
+                                    <strong>Web Development</strong>
+                                    <span className="color-white pull-right">95%</span>
+                                    <div className="progress">
+                                        <div className="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width: "95%"}}></div>
+                                    </div>
 
                                     <strong>REST API Development</strong>
                                     <span className="color-white pull-right">95%</span>
@@ -40,16 +46,10 @@ export default class AboutSection extends Component {
                                         <div className="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style={{width: "95%"}}></div>
                                     </div>
 
-                                    <strong>Application Development</strong>
+                                    <strong>Mobile App Development</strong>
                                     <span className="color-white pull-right">90%</span>
                                     <div className="progress">
                                         <div className="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style={{width: "90%"}}></div>
-                                    </div>
-
-                                    <strong>Web Development</strong>
-                                    <span className="color-white pull-right">80%</span>
-                                    <div className="progress">
-                                        <div className="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{width: "80%"}}></div>
                                     </div>
 
                                     <strong>Cloud Computing</strong>

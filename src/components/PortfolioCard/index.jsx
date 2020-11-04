@@ -51,8 +51,8 @@ export default class PortfolioCard extends Component {
                             <span className="year">{this.getDisplayDate(this.state.project.created, 3)}</span>
                         </div>
                         <ul className="menu-content">
-                            <li><a href="javascript:null" className="fa fa-user-o " title="Team Size"><span>{this.state.project.team_size}</span></a></li>
-                            <li><a href="javascript:null" className="fa fa-calendar-o" title="Duration"><span>{this.state.project.duration}</span></a></li>
+                            <li><button className="fa fa-user-o" title="Team Size"><span>{this.state.project.team_size}</span></button></li>
+                            <li><button className="fa fa-calendar-o" title="Duration"><span>{this.state.project.duration}</span></button></li>
                         </ul>
                     </div>
                     <div className="data">
