@@ -9,7 +9,7 @@ export default class ExperienceSection extends Component {
         let experiences = [{
             company: 'ITC Infotech India Ltd.',
             title: 'Associate IT Consultant',
-            duration: 'Sep 2019 - Present',
+            duration: 'Sep 2019 - Jan 2021',
             description: 'Currently building Mobile Apps and Micro-services for SessionM Accelerators at ITC Infotech India Ltd.',
             wowDelay: 1.2
         },{
