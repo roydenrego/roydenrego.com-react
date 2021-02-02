@@ -10,8 +10,10 @@ export default class Experience extends Component {
                 </div>
                 <div className="media-body">
                     <h3 className="media-heading">{this.props.company} - {this.props.title}<small className="exp-small">{this.props.duration}</small></h3>
-                    <p className="color-white">{this.props.description}</p>
                 </div>
+                <ul className="exp-description">
+                    {this.props.description.map((item, index) => <li key={index}>{item}</li>)}
+                </ul>
             </div>
         )
     }

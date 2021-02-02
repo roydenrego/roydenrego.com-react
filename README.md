@@ -70,7 +70,7 @@ Once the .env file is setup, you can run the website by executing the following 
 Initial Nodejs Release
 
 #### V 2.0.0
-Initial React Release
+Code rewritten in React
 
 ## Authors
 [Royden Rego](https://roydenrego.com)
