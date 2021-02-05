@@ -4,6 +4,7 @@ import './style.css';
 import axios from 'axios';
 import ReCAPTCHA from "react-google-recaptcha";
 import Swal from 'sweetalert2';
+import LazyLoad from 'react-lazyload';
 
 let contactEmail = 'roydenrego@outlook.com';
 
@@ -136,11 +137,13 @@ export default class DownloadSection extends Component {
                                                 required />
                                         </div>
 
-                                        <ReCAPTCHA
-                                            ref={this.recaptchaRef}
-                                            sitekey="6LdVVYQUAAAAAKyM6ST5JMi4lwNXM13B-11U9Ry8"
-                                            onChange={this.onChange}
-                                            data-wow-delay="1.6s" />
+                                        <LazyLoad>
+                                            <ReCAPTCHA
+                                                ref={this.recaptchaRef}
+                                                sitekey="6LdVVYQUAAAAAKyM6ST5JMi4lwNXM13B-11U9Ry8"
+                                                onChange={this.onChange}
+                                                data-wow-delay="1.6s" />
+                                        </LazyLoad>
 
                                         <div className="wow fadeInUp col-md-6 col-sm-8" data-wow-delay="1.8s">
                                             {this.state.buttonEnabled ?
