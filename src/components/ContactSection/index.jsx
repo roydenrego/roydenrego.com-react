@@ -40,7 +40,7 @@ export default class DownloadSection extends Component {
                     'g-recaptcha-response': captcha
                 }
             });
-            console.log(response);
+
             if (response.data.status === 'ok') {
                 this.setState({
                     buttonEnabled: true,
